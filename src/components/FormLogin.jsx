@@ -5,8 +5,11 @@ import InputForm from "./atoms/InputForm";
 import InputWithSelect from "./atoms/InputWithSelect";
 
 const FormLogin = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
-    <FormLoginContainer className="">
+    <FormLoginContainer onSubmit={handleSubmit}>
       <div className="wrapper ">
         <h2>Déjanos tus datos</h2>
         <div className="field">
